@@ -2,11 +2,10 @@ vars:
   stage: prod
   
 import:
-  - catalog/myapp
+  - catalog/vpc
 
 components:
   terraform:
-    myapp:
+    vpc:
       vars:
-        location: Los Angeles
-        lang: en
+        stage: prod
